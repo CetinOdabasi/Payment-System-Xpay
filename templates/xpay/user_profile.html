@@ -1,0 +1,42 @@
+  {% extends 'navbar_profile.html' %}
+
+  {% block content %}
+
+
+  {% if messages %}
+  <ul class="messages">
+    
+    {% for message in messages %}
+    <li class='asd' {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+    
+  </ul>
+  {% endif %}
+
+  <p class="password_again">Password again:</p>
+
+
+  <form class="myuserform" method="post">
+      {% csrf_token %}
+
+      {{ editform}}
+
+  <button class='update_button'  name="update"  type='submit'>update</button>
+  <button class='update_button1' name="update"  type='submit'>update</button>
+  <button class='update_button2' name="update"  type='submit'>update</button>
+  <button class='update_button3' name="update"  type='submit'>update</button>
+  <button class='update_button4' name="update"  type='submit'>update</button>
+
+
+    </form>
+    
+    <form  method="post">
+      {% csrf_token %}
+
+      {{ passform}}
+
+      <button class='changebutton' name="passform"  type='submit'>confirm</button>
+
+    </form>
+  {% endblock %}
+

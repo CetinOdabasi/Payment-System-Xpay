@@ -1,0 +1,139 @@
+
+  
+.depositing_confirmation form {
+	background-color: #fff;
+   width: 450px;
+   height: 630px;
+   text-align: left;
+	margin: 40px auto;
+   padding:40px 0 0 0;
+   font-size: 14px;
+   top:30px;
+
+}
+.depositing_confirmation select{
+  pointer-events: none;
+
+}
+
+.depositing_confirmation input[type=text],.asdd input[type=number]{
+
+   width: 30%;
+   padding: 5px ;
+   margin: 5px 0 7px 0;
+   display: inline-block;
+   border: none;
+   background: #ffffff;
+   border: 1px solid #4F4F4F;
+   opacity: 0.4;
+   pointer-events: none;
+
+
+ }
+ 
+ input[type=text]:focus, input[type=number]:focus{
+   background-color: rgb(223, 227, 255);
+   outline: none;
+ }
+
+
+ label, input {
+   display: inline-block;
+}
+
+.depositing_confirmation label {
+   width: 36%;
+   text-align: right;
+   position: relative;
+   right: 10px;
+
+}
+
+
+.depositing_confirmation form {
+   position: relative;
+   width: 70%;
+   left:50px;
+
+  }
+
+.depositing_confirmation #id_receiver_iban_no{
+  padding: 5px ;
+  margin: 5px 0 7px 0;
+  width: 31.3%;
+  left:50px;
+  border: 1px solid #4F4F4F;
+  opacity: 0.4;
+  pointer-events: none;
+
+
+}
+.depositing_confirmation #id_amount{
+  padding: 5px ;
+  margin: 5px 0 7px 0;
+  width: 13%;
+  right: 150px;
+  border: 1px solid #4F4F4F;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.depositing_confirmation button{
+  width: 115px;
+  height: 40px;
+  top:242px;
+  left: 530px;
+  position: absolute;
+
+
+}
+
+.btn2 button{
+  width: 115px;
+  height: 40px;
+  top:241px;
+  left: 348px;
+  position: absolute;
+  background-color: #2499CC;
+  color: white;
+  padding: 13px 20px;
+  margin: 18px 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+  font-size:15px;
+}
+
+
+
+
+
+
+.depositing_confirmation #id_sender_full_name{
+  padding: 5px ;
+  margin: 5px 0 7px 0;
+  width: 30%;
+  left:50px;
+  border: 1px solid #4F4F4F;
+  opacity: 0.4;
+  pointer-events: none;
+
+
+}
+
+.depositing_confirmation .full_name{
+  padding: 5px ;
+  margin: 5px 0 7px 0;
+  width: 30%;
+  left:344.5px;
+  border: 1px solid #4F4F4F;
+  top:-1px;
+  opacity: 0.4;
+
+
+}
+.depositing_confirmation p{
+  position: absolute;
+  left: 225px;
+  top:10px;
+}

@@ -1,0 +1,19 @@
+    {% extends 'navbar_profile.html' %}
+
+    {% block content %}
+    
+    <div class='send'>
+        <form   method="POST" action="{% url 'send_money_confirmation_page' %}">
+            {% csrf_token %}
+            
+            {{form}}
+            
+            <button><a href="{% url 'send_money_page' %}"  id='button1' type = "submit" name='go_on'>Go on</a></button>
+            <div class='btn2_turn'>
+                <button><a href="{% url 'send_money_page' %}" id='button2'  type = "submit" name='turn_back'>Turn back</a></button>
+            </div>
+                    
+        </form>
+    </div>
+
+    {% endblock %}

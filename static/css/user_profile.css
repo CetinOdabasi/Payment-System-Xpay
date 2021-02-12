@@ -1,0 +1,227 @@
+.helptext{
+  visibility: hidden;
+}
+.p{
+  position: absolute;
+  left:390px;
+  top:375px;
+}
+
+.new_password2{
+  visibility: hidden;
+}
+.myuserform  [for=id_password]{
+  visibility: hidden;
+
+}
+
+label[for=id_email]{
+  position: absolute;
+  left:468px;
+  top:147px;
+}
+
+label[for=id_first_name]{
+  position: absolute;
+  left:430px;
+  top:197px;
+}
+
+label[for=id_last_name]{
+  position: absolute;
+  left:430px;
+  top:250px;
+  /* visibility: hidden; */
+
+}
+label[for=id_phone_number]{
+  position: absolute;
+  left:400px;
+  top:298px;
+}
+
+label[for=id_country]{
+  position: absolute;
+  left:450px;
+  top:348px;
+}
+
+#id_password{
+  visibility: hidden;
+  position: absolute;
+
+}
+
+#id_old_password{
+  position: absolute;
+  left:528px;
+  top:392px;
+  width: 90px;
+  height: 26px;
+
+}
+
+#id_new_password1{
+  position: absolute;
+  left:750px;
+  top:392px;
+  width: 90px;
+  height: 26px;
+
+}
+#id_new_password2{
+  position: absolute;
+  left:980px;
+  top:392px;
+  width: 90px;
+  height: 26px;
+
+}
+
+
+label[for=id_old_password]{
+  position: absolute;
+  left:410px;
+  top:405px;
+}
+
+label[for=id_new_password1]{
+  position: absolute;
+  left:630px;
+  top:405px;
+}
+label[for=id_new_password2]{
+  visibility: hidden;
+
+}
+
+.password_again{
+  position: absolute;
+  left:855px;
+  top:405px;
+}
+
+.id_email{
+  position: absolute;
+  left:700px;
+  top:255px;
+
+}
+
+
+
+#id_email{
+  position: absolute;
+  left:528px;
+  top:135px;
+  height: 29px;
+  width: 570px;
+
+}
+
+
+  
+#id_first_name{
+  position: absolute;
+  left:528px;
+  top:181px;
+  height: 20px;
+  width: 561px;
+
+}
+  
+
+#id_last_name{
+  position: absolute;
+  left:528px;
+  top:232px;
+  height: 20px;
+  width: 561px;
+
+}
+
+
+
+#id_phone_number{
+  position: absolute;
+  left:528px;
+  top:283px;
+  height: 20px;
+  width: 561px;
+
+}
+
+#id_country{
+  position: absolute;
+  left:528px;
+  top:340px;
+  height: 32px;
+  width: 440px;
+
+}
+
+
+#editform{
+position: absolute;
+left:850px;
+top:280px;
+width:173px;
+height: 40px;
+}
+
+.myuserform .update_button{
+  position:fixed;
+  left:1100px;
+  top:117px;
+  width:98px;
+  height: 33px;
+  align-self: center;
+
+  }
+
+  
+  .myuserform .update_button1{
+    position:fixed;
+    left:1100px;
+    top:168px;
+    width:98px;
+    height: 32px;
+    align-self: center;
+
+    }
+    
+    .myuserform .update_button2{
+      position:fixed;
+      left:1100px;
+      top:219px;
+      width:98px;
+      height: 32px;
+      align-self: center;
+  
+      }
+
+      .myuserform .update_button3{
+        position:fixed;
+        left:1100px;
+        top:270px;
+        width:98px;
+        height: 32px;
+        align-self: center;
+    
+        }
+        .myuserform .update_button4{
+          position:fixed;
+          left:1100px;
+          top:320px;
+          width:98px;
+          height: 32px;
+          align-self: center;
+      
+          }
+
+        .changebutton{
+          left:1100px;
+          top:372px;
+          width:98px;
+          height: 32px;
+        }

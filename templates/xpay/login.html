@@ -1,0 +1,27 @@
+  {% extends 'navbar.html' %}
+  
+  {% block content %}
+  
+  <div class="log">
+    <form method = "post" action="">
+      
+      {% csrf_token %}
+      <h2>Login</h2>
+      
+      {{ form.as_p }}
+      
+      <button type = "submit" >confirm</button>
+    
+    </form>
+    <br>
+    
+    {% if messages %}
+    <ul class="messages">  
+      {% for message in messages %}
+      <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+  
+  {% endblock %}

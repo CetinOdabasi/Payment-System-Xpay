@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  
+  
+  }
+  
+  .navbar {
+      background-color: #0172e1;
+      height: 50px;
+      width: 100%;
+  
+  
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  
+  
+  header{
+    display:flex;
+  }
+  
+  
+  
+  ul li {
+    float: left;
+    margin:0 80px;
+    list-style: none; 
+    position: relative;
+    left:180px;
+  }
+  
+  
+  
+  ul li a {
+    font-size: 17px;
+    font-family:Arial;
+    color:white;
+  }
+  
+  
+  
+  
+  .logo{
+    font-size: 22px;
+    color: white;
+    position: relative;
+    left: 30px;
+    top:21px;
+  }
+  
+  
+
+
+
+.login{
+  font-family: Arial;
+  font-size: 17px;
+  color:white;
+  position: relative;
+  left: 1130px;
+  bottom:20px;
+
+}
+
+.signup{
+  font-family: Arial;
+  font-size: 17px;
+  color:white;
+  position:relative;
+  left: 1200px;
+  bottom: 20px;
+}
+
+
+
+

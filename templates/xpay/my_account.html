@@ -1,0 +1,27 @@
+
+    {% extends 'navbar_profile.html' %}
+    
+    {% block content %}
+    
+    <div id = "sidebar">
+      <ul>
+        <li>
+          <a href="{% url 'open_and_close_account_page' %}">+/-  Add/Delete</a>
+        </li>
+      </ul>
+      
+      <div class='side_bar_iban_no'>
+        <ul>
+          <li>
+            
+            {% for email in ibanNo %}
+            <a href="{% url 'detail' email.account_number %}">  {{ email.iban_no }}</a>
+            {% endfor %}
+          
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  {% endblock %}
+

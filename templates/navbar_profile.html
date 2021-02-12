@@ -1,0 +1,64 @@
+    {% load static %}
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>xpayapp</title>
+        <link rel="stylesheet" href={% static 'css/navbar.css' %}>
+        <link rel="stylesheet" href={% static 'css/sidebar.css' %}>
+        <link rel="stylesheet" href={% static 'css/open_and_close.css' %}>
+        <link rel="stylesheet" href={% static 'css/money_depositing.css' %}>
+        <link rel="stylesheet" href={% static 'css/money_depositing_confirmation.css' %}>
+        <link rel="stylesheet" href={% static 'css/send_money.css' %}>
+        <link rel="stylesheet" href={% static 'css/send_money_confirmation.css' %}>
+        <link rel="stylesheet" href={% static 'css/detail.css' %}>
+        <link rel="stylesheet" href={% static 'css/user_profile.css' %}>
+        <link rel="stylesheet" href={% static 'css/my_personel_informations.css' %}>
+        <link rel="stylesheet" href={% static 'css/password_change.css' %}>
+
+
+
+
+
+    </head>
+    
+    <body>
+        <header>
+            <div class="navbar">
+                
+                    <a class="logo" href={% url 'profile_page' %}>XPAY</a>
+
+
+
+                    <ul class="navbar-body">
+                        <li><a href={% url 'my_xpay_account_page' %}> My Xpay Accounts </a></li>
+                        <li><a href={% url 'money_depositing_page' %}> Money Depositing </a></li>
+                        <li><a href={% url 'send_money_page' %}> Xpay Transfer </a></li>
+                    </ul>
+
+
+
+                    <a class='login' href={% url 'user_profile_page' %}>User profile</a>
+                    <a class='signup' href={% url 'home_page' %}>Logout</a>
+                
+
+            </div>
+        </header>
+            
+
+            
+    <main>
+        {% block content %}
+
+        
+        {% endblock %}
+    </main>
+        <footer>
+
+        </footer>
+
+
+    </body>
+    </html>

@@ -1,0 +1,126 @@
+.box { 
+    width: 300px;
+    height:40px;
+    background-color:#41b9d9;
+
+}
+
+.box {
+    position:fixed;
+    left:260px;
+    top:100px;
+}
+form p{
+    position:fixed;
+    left:30px;
+    top:200px;
+    font-family: Arial ;
+}
+
+form h4{
+    position:fixed;
+    left:360px;
+    top:112px;
+}
+
+
+#id_currency{
+    width: 130px;
+    height:30px;
+    position:fixed;
+    left:430px;
+    top:190px;
+}
+
+.sellectcurrency{
+    position:fixed;
+    left:100px;
+    top:280px;
+}
+form button {
+    position:fixed;
+    left:310px;
+    top:250px;
+    background-color: #2499CC;
+    color: black;
+    padding: 13px 20px;
+    margin: 18px 0;
+    border: none;
+    cursor: pointer;
+    width: 15%;
+    opacity: 0.9;
+    font-size:15px;
+}
+
+.button2{
+    background-color:  #2499CC;
+    position:fixed;
+    left:860px;
+    top:250px;
+
+
+}
+
+
+form p{
+    position:fixed;
+    left:600px;
+    top:200px;
+    font-family: Arial ;
+}
+
+
+ .boxxx{
+    position:fixed;
+    left:800px;
+    top:100px;
+}
+
+.delete {
+    position:fixed;
+    left:1100px;
+    top:250px;
+}
+
+.boxxx { 
+    width: 300px;
+    height:40px;
+    background-color:#41b9d9;
+
+}
+
+.boxxx {
+    position:fixed;
+    left:800px;
+    top:100px;
+}
+
+
+#id_current_accounts{
+    width: 130px;
+    height:30px;
+    position:fixed;
+    left:970px;
+    top:190px;
+}
+
+
+.boxxx h4{
+    position:fixed;
+    left:890px;
+    top:112px;
+}
+
+.boxxx label{
+
+    position:fixed;
+    left:830px;
+    top:200px;
+}
+
+.box label{
+
+    position:fixed;
+    left:340px;
+    top:200px;
+}

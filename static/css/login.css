@@ -1,0 +1,15 @@
+.log{
+    background-color: #fff;
+    width: 500px;
+    height: 280px;
+    text-align: center;
+     margin: 30px auto;
+    padding:10px 0 0 0;
+    border: 1px solid #4F4F4F;
+    font-size: 14px;
+}
+h2{
+    position: relative;
+    left: 55px;
+}
+

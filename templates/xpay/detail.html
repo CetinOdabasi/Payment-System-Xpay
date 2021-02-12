@@ -1,0 +1,122 @@
+
+    {% extends 'navbar_profile.html' %}
+
+
+
+    {% block content %}
+    <div id = "sidebar">
+      <ul>
+        <li>
+          <a href="{% url 'open_and_close_account_page' %}">+/-  Add/Delete</a>
+        </li>
+      </ul>
+      <div class='side_bar_iban_no'>
+        <ul>
+          <li>
+            
+            {% for email in open_iban_list %}
+            <a href="{% url 'detail' email.account_number %}">  {{ email.iban_no }}</a>
+            {% endfor %}
+          
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class='ibanno'><p>{{iban_detail_page.iban_no}}</p></div>
+    <div class='dateopened'><p>{{iban_detail_page.date_opened}}</p></div>
+    <div class='account_balance'><p>{{ account_transaction_last.account_balance }}</p></div>
+    <div class="bank_name"><p>Xpay Bank</p></div>
+    <div class='receiver_iban_no_account_balance'>
+      <ul>
+        
+        {%  for email in account_transaction %}   
+        <br>{{ email.account_balance }}
+        {% endfor %}
+
+      </ul>
+    </div>
+    <div class='receiver_iban_no_detail_date'>
+      <ul>
+        
+        {%  for email in account_transaction %}
+        <br>{{ email.date_of_transaction }}
+        
+        {% endfor %}
+      
+      </ul>
+    </div>
+    <div class='receiver_iban_no_detail_sender_bank'>
+      <ul>
+        
+        {%  for email in account_transaction %}
+        <br>{{ email.sender_bank_name }}
+        {% endfor %}
+      
+      </ul>
+    </div>
+    
+    <div class='receiver_iban_no_detail_receiver_bank'>
+      <ul>
+        
+        {%  for email in account_transaction %}
+        <br>{{ email.receiver_bank_name }}
+        {% endfor %}
+      
+      </ul>
+    </div>
+    
+    <div class='receiver_iban_no_detail_sender_full_name'>
+      <ul>
+        
+        {%  for email in account_transaction %}
+        <br>{{ email.sender_full_name }}
+        {% endfor %}  
+      
+      </ul>
+    </div>
+    
+    <div class='receiver_iban_no_receiver_full_name'>
+      <ul>
+        
+        {%  for email in account_transaction %}
+        <br>{{ email.receiver_full_name }}
+        {% endfor %}
+      
+      </ul>
+    </div>
+    
+    <div class='receiver_iban_no_detail_amount'>
+      <ul>
+        
+        {%  for email in account_transaction %}
+        <br>{{ email.amount }}
+        {% endfor %}  
+      
+      </ul>
+    </div>
+    
+    <div class='my_iban_no'>
+      <h3 class="menu1">My {{iban_detail_page.iban_no}} account infermation</h3>
+      <ul class='iban_list_title'>
+        <li>Account oppening date</li>
+        <li>Latest balance</li>
+        <li>İban number</li>
+        <li>Bank name</li>
+      </ul>
+    </div>
+
+    <div class='my_iban_no2'>
+      <h3 class="menu2">My {{iban_detail_page.iban_no}}  account history</h3>
+      <ul class='iban_list_title2'>
+      <li>Total</li>
+      <li>İncoming / Outgoing money</li>
+      <li>Sender name</li>
+      <li>Receiver name</li>
+      <li>Bank name</li>
+      <li>History</li>
+
+      </ul>
+    </div>
+
+
+    {% endblock %}

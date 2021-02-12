@@ -1,0 +1,14 @@
+    {% extends 'navbar_profile.html' %}
+
+    {% block content %}
+    <div class='send_money'>
+        <form method="POST" action="" >
+        {% csrf_token %}
+
+        {{form}}
+
+        <button><a href="{% url 'send_money_confirmation_page' %}"  type='submit' >confirm</a></button>
+        </form>
+    </div>
+
+    {% endblock %}

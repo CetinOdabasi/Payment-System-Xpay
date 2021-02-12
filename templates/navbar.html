@@ -1,0 +1,54 @@
+    {% load static %}
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>xpayapp</title>
+        <link rel="stylesheet" href={% static 'css/navbar.css' %}>
+        <link rel="stylesheet" href={% static 'css/signup.css' %}>
+        <link rel="stylesheet" href={% static 'css/login.css' %}>
+
+
+
+
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                
+                    <a class="logo" href={% url 'home_page' %}>XPAY</a>
+
+
+
+                    <ul class="navbar-body">
+                        <li><a href="#"> My Xpay Accounts </a></li>
+                        <li><a href="#"> Money Depositing </a></li>
+                        <li><a href="#"> Xpay Transfer </a></li>
+                    </ul>
+
+
+
+                    <a class='login' href="{% url 'login_page' %}">Login</a>
+                    <a class='signup' href="{% url 'signup_page' %}">Sign Up</a>
+                
+
+            </div>
+        </header>
+            
+
+            
+    <main>
+
+        {% block content %}
+        {% endblock %}
+        
+    </main>
+        <footer>
+
+        </footer>
+
+
+    </body>
+    </html>

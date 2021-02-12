@@ -1,0 +1,113 @@
+.send_money form {
+	background-color: #fff;
+   width: 450px;
+   height: 320px;
+   text-align: left;
+	margin: 40px auto;
+   padding:40px 0 0 0;
+   font-size: 14px;
+   top:30px;
+}
+
+
+input[type=text], input[type=number]{
+
+   width: 30%;
+   padding: 5px ;
+   margin: 5px 0 7px 0;
+   display: inline-block;
+   border: none;
+   background: #ffffff;
+   border: 1px solid #4F4F4F;
+ }
+ 
+ input[type=text]:focus, input[type=number]:focus{
+   background-color: rgb(223, 227, 255);
+   outline: none;
+ }
+
+ .send_money button {
+  background-color: #2499CC;
+  color: white;
+  padding: 13px 20px;
+  margin: 18px 0;
+  border: none;
+  cursor: pointer;
+  width: 13%;
+  opacity: 0.9;
+  font-size:15px;
+  position: absolute;
+  left: 430px;
+  top:255px;
+
+
+ }
+
+ button:hover {
+   opacity:1px;
+
+ }
+
+
+
+
+ label, input {
+   display: inline-block;
+}
+
+.send_money label {
+   width: 36%;
+   text-align: right;
+   position: relative;
+   right: 10px;
+}
+
+
+.send_money form {
+   position: relative;
+   width: 70%;
+   left:50px;
+  }
+
+.send_money #id_sender_iban_no{
+  padding: 5px ;
+  margin: 5px 0 7px 0;
+  width: 31.3%;
+  left:50px;
+  border: 1px solid #4F4F4F;
+
+}
+.send_money #id_amount{
+  padding: 5px ;
+  margin: 5px 0 7px 0;
+  width: 13%;
+  right: 150px;
+  border: 1px solid #4F4F4F;
+
+}
+
+
+.send_money .full_name{
+  padding: 5px ;
+  margin: 5px 0 7px 0;
+  width: 30%;
+  left:344.5px;
+  border: 1px solid #4F4F4F;
+  top:-1px;
+
+
+}
+.send_money p{
+  position: absolute;
+  left: 225px;
+  top:10px;
+}
+
+
+.errorlist{
+  position: fixed;
+  left: 283px;
+  top:380px;
+  padding: 100px;
+  font-size: 17px;
+}

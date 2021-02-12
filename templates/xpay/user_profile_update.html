@@ -1,0 +1,29 @@
+  {% extends 'navbar_profile.html' %}
+
+  {% block content %}
+
+
+  <p class="password_again">Password again:</p>
+  
+  <form class="myuserform" method="post">
+      {% csrf_token %}
+
+      {{ form}}
+      
+  <button class='update_button'  name="update"  type='submit'>update</button>
+  <button class='update_button1' name="update"  type='submit'>update</button>
+  <button class='update_button2' name="update"  type='submit'>update</button>
+  <button class='update_button3' name="update"  type='submit'>update</button>
+  <button class='update_button4' name="update"  type='submit'>update</button>
+
+
+    </form>
+    
+    <form  method="post">
+      {% csrf_token %}
+
+      {{ passform}}
+      
+    </form>
+
+  {% endblock %}

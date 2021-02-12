@@ -1,0 +1,28 @@
+     {% extends 'navbar_profile.html' %}
+
+     {% block content %}
+     
+     <form method="POST" action="">
+          {% csrf_token %}
+          
+          <div class='box'>
+               <h4>New Account</h4>
+               
+               {{ form1 }}
+          </div>
+          <button type='submit' name='form1'>open</button>
+     </form>
+     
+     <form method="POST" action=''>
+          {% csrf_token %}
+          <div class='boxxx'>
+               <h4>Current Account's</h4>
+               
+               {{ form2 }}
+          
+          </div>
+          <button class='button2' type="submit" name="form2">delete</button>
+     </form>
+
+
+     {% endblock %}
